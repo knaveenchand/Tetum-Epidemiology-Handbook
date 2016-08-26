@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".DictionaryActivity">
+
+        <TextView
+            android:id="@+id/word"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/word"
+            android:layout_below="@+id/word"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/dictionary"
+            android:layout_below="@+id/seperator"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#040303"
+            android:textIsSelectable="true"
+            android:textSize="24dp"
+            android:maxLines="9"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"/>
+
+        <View
+            android:id="@+id/seperatorone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:layout_alignTop="@+id/credits"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This app has been developed for Ministry de Saude, Timor-Leste. \nConcept by: Dr Murali Krishna Nelakurthi \nDeveloped by: Matenek Technologies \nwww.matenenk.com"
+            android:id="@+id/credits"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#040303"
+            android:textIsSelectable="true"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/seperatorone"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
